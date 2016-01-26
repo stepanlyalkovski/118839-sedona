@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Seonda - гостиницы</title>
+</head>
+<body>
+  <header class="main-header">
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Фото и видео</a></li>
+        <li><a href="#">Карта штата</a></li>
+        <li><span>Гостиницы</span></li>
+      </ul>
+    </nav>
+    <div class="main-logo">
+      <img src="http://placehold.it/150x100" alt="placeholder" width="150"height="100">
+    </div>
+  </header>
+  <main>
+    <section class="hotels-type">
+      <form class="hotels-type-form" action="#" method="post">
+        <div class="hotels-type-left">
+          <fieldset>
+            <legend>Инфаструктура:</legend>
+            <label for="pool">Бассейн</label>
+            <input class="hotels-type-checkbox" type="checkbox" name="pool" id="pool" checked>
+            <label for="parking">Парковка</label>
+            <input class="hotels-type-checkbox" type="checkbox" name="parking" id="parking">
+            <label for="wi-fi">WI-FI</label>
+            <input class="hotels-type-checkbox" type="checkbox" name="wifi" id="wi-fi">
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <label for="hotels">Гостиница</label>
+            <input class="hotels-type-checkbox" type="checkbox" name="hotels" id="hotels" checked>
+            <label for="motel">Мотель</label>
+            <input class="hotels-type-checkbox" type="checkbox" name="motel" id="motel" checked>
+            <label for="apartments">Апартаменты</label>
+            <input class="hotels-type-checkbox" type="checkbox" name="apartments" id="apartments" checked>
+          </fieldset>
+        </div>
+        <div class="hotels-type-right">
+          <!-- Стоит ли это организовать с помощью number и range? -->
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale"><div class="bar"></div></div>
+              <div class="toggle min-toggle"></div>
+              <div class="toggle max-toggle"></div>
+            </div>
+            <div class="price-controls">
+                от <input class="min-price" type="text" value="0">
+                до <input class="max-price" type="text" value="3000">
+            </div>
+          </div>
+          <button type="submit">Показать</button>
+        </div>
+      </form>
+    </section>
+    <section class="hotels-search-result">
+      <section class="hotels-list">
+        <article class="hotel-item">
+          <div class="hotel-container-left">
+            <img src="http://placehold.it/150x100" alt="placeholder" class="hotel-image" width="150" height="100">
+            <h2>Hotel name</h2>
+            <p>Hotel type</p>
+            <button class="btn-more">Подробнее</button>
+            <button class="btn-book">Забронировать</button>
+          </div>
+          <div class="hotel-container-right">
+            <div class="rating-stars"></div>
+            <span class="raiting">Рейтинг: 8.5</span>
+          </div>
+        </article>
+        <article class="hotel-item">
+          <div class="hotel-container-left">
+            <img src="http://placehold.it/150x100" alt="placeholder" class="hotel-image" width="150" height="100">
+            <h2>Hotel name</h2>
+            <p>Hotel type</p>
+            <button class="btn-more">Подробнее</button>
+            <button class="btn-book">Забронировать</button>
+          </div>
+          <div class="hotel-container-right">
+            <div class="rating-stars"></div>
+            <span class="raiting">Рейтинг: 8.5</span>
+          </div>
+        </article>
+        <article class="hotel-item">
+          <div class="hotel-container-left">
+            <img src="http://placehold.it/150x100" alt="placeholder" class="hotel-image" width="150" height="100">
+            <h2>Hotel name</h2>
+            <p>Hotel type</p>
+            <button class="btn-more">Подробнее</button>
+            <button class="btn-book">Забронировать</button>
+          </div>
+          <div class="hotel-container-right">
+            <div class="rating-stars"></div>
+            <span class="raiting">Рейтинг: 8.5</span>
+          </div>
+        </article>
+      </section>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <section class="hashtag">
+      #VISITSEDONA
+    </section>
+    <section class="footer-social">
+      <a class="social-btn social-btn-tw" href="#">Twitter</a>
+      <a class="social-btn social-btn-fb" href="#">Facebook</a>
+      <a class="social-btn social-btn-yt" href="#">Youtube</a>
+    </section>
+    <section class="footer-copyright">
+      Website By <a href="#"><img src="http://placehold.it/150x100" alt="placeholder" width="150"height="100"></a>
+    </section>
+  </footer>
+</body>
+</html>
