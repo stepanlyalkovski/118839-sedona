@@ -2,24 +2,25 @@
 <html lang="ru">
   <head>
       <meta charset="UTF-8">
-      <title>Sedona - остиницы</title>
+      <title>Sedona - Гостиницы</title>
+      <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class ="container">
+    <div class="container">
       <header class="main-header">
         <nav class="main-nav">
           <ul>
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
-            <li><a href="#">Карта штата</a></li>
-            <li><span>Гостиницы</span></li>
+            <li class="main-nav-item"><a href="#">Информация</a></li>
+            <li class="main-nav-item"><a href="#">Фото и видео</a></li>
+            <li class="main-nav-item"><a href="#">Карта штата</a></li>
+            <li class="main-nav-item"><span>Гостиницы</span></li>
           </ul>
         </nav>
         <div class="main-logo">
-          <img src="http://placehold.it/150x100" alt="placeholder" width="150" height="100">
+          <a href="index.html"><img src="img/logo.png" alt="logo" width="138" height="70"></a>
         </div>
       </header>
-      <main class="index-page">
+      <main class="catalog-page">
         <section class="hotels-type">
           <form class="hotels-type-form" action="#" method="post">
             <div class="hotels-type-left">
@@ -54,7 +55,7 @@
                    до <input class="max-price" type="text" value="3000">
                 </div>
               </div>
-              <button type="submit">Показать</button>
+              <button class="btn-show" type="submit">Показать</button>
             </div>
          </form>
         </section>
@@ -75,7 +76,7 @@
           <section class="hotels-list">
             <article class="hotel-item">
               <div class="hotel-wrapper-left">
-                <img src="http://placehold.it/150x100" alt="placeholder" class="hotel-image" width="150" height="100">
+                <img src="img/hotel-amara.jpg" alt="hotel-amara" height="90" width="135">
                 <h2 class="hotel-name">Amara Resort & SPA</h2>
                 <p class="hotel-description">Гостиница    ОТ 3500 Р.</p>
                 <a class="btn-more" href="#">Подробнее</a>
@@ -83,12 +84,12 @@
               </div>
               <div class="hotel-wrapper-right">
                 <div class="rating-stars"></div>
-                <span class="rating">Рейтинг: 8.5</span>
+                <div class="rating">Рейтинг: 8.5</div>
               </div>
             </article>
             <article class="hotel-item">
               <div class="hotel-wrapper-left">
-                <img src="http://placehold.it/150x100" alt="placeholder" class="hotel-image" width="150" height="100">
+                <img src="img/hotel-quail.jpg" alt="hotel-quail" height="90" width="135">
                 <h2 class="hotel-name">DESERT QUAIL INN</h2>
                 <p class="hotel-description">Мотель   ОТ 2000 Р.</p>
                 <a class="btn-more" href="#">Подробнее</a>
@@ -96,12 +97,12 @@
               </div>
               <div class="hotel-wrapper-right">
                 <div class="rating-stars"></div>
-                <span class="rating">Рейтинг: 8.9</span>
+                <div class="rating">Рейтинг: 8.9</div>
               </div>
             </article>
             <article class="hotel-item">
               <div class="hotel-wrapper-left">
-                <img src="http://placehold.it/150x100" alt="placeholder" class="hotel-image" width="150" height="100">
+                <img src="img/hotel-villas.jpg" alt="hotel-villas" height="90" width="135">
                 <h2 class="hotel-name">VILLAS AT POCO DIABLO</h2>
                 <p class="hotel-description">Апартаменты    ОТ 4000 Р.</p>
                 <a class="btn-more" href="#">Подробнее</a>
@@ -109,7 +110,7 @@
               </div>
               <div class="hotel-wrapper-right">
                 <div class="rating-stars"></div>
-                <span class="rating">Рейтинг: 9.2</span>
+                <div class="rating">Рейтинг: 9.2</div>
               </div>
             </article>
           </section>
@@ -125,7 +126,7 @@
           <a class="social-btn social-btn-yt" href="#">Youtube</a>
         </section>
         <section class="footer-copyright">
-          Website By <a href="#"><img src="http://placehold.it/150x100" alt="placeholder" width="150" height="100"></a>
+          Website By <a href="#"><img src="img/logo-academy.png" alt="academy-logo" height="39" width="113"></a>
         </section>
       </footer>
     </div>

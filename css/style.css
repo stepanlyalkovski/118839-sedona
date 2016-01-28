@@ -1,0 +1,15 @@
+body {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+}
+h1 {
+  font-size: 21px;
+  line-height: 26px;
+}
+.title-image {
+  background: url(../img/background-main.jpg) no-repeat;
+}
+.hotels-type {
+  background: url(../img/background-filter.jpg) no-repeat;
+}
