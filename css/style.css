@@ -34,7 +34,7 @@ ul {
 .main-header {
   padding-left: 6%;
   padding-right: 6%;
-  height: 56px;
+  min-height: 56px;
 }
 .main-logo {
   display: none;
@@ -46,10 +46,12 @@ ul {
   display: block;
   float: left;
   width: 20%;
-  padding-top: 17.5px;
-  padding-bottom: 17.5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 1%;
   padding-right: 1%;
+
+  line-height: 26px;
 }
 .main-nav-item:nth-child(3n) {
   margin-left: 12%;
@@ -57,11 +59,15 @@ ul {
 .main-nav-item:nth-child(n+3) {
    text-align: right;
 }
+
 .title-image {
   background: url(../img/bg-main.jpg) no-repeat;
   background-size: 100% 100%;
   background-position: top;
   overflow: hidden;
+}
+.hotels-type {
+  background: url(../img/bg-filter.jpg) no-repeat;
 }
 .title-image img{
   display: block;
@@ -69,29 +75,107 @@ ul {
   margin-top: 76px;
   margin-bottom: 86px;
 }
-.hotels-type {
-  background: url(../img/bg-filter.jpg) no-repeat;
-}
 
 .features-banner {
-  height: 256px;
+  min-height: 256px;
 }
-.features-banner-item{
+.features-banner-item {
   float: left;
-}
-.features-image {
-  float: right;
-}
-.features-banner-item{
+  background-color: #81b3d2;
   width: 33%;
-  font-size: 14px;
+  min-height: 211px;
+  padding-top: 45px;
+  color: white;
+  text-align: center;
 }
-.features-image {
-  display: block;
-  width: 67%;
-  height: 100%;
+.features-banner-item .simple-text {
+  padding-left: 27px;
+  padding-right: 27px;
 }
+.features-name {
+  font-size: 26px;
+  margin-bottom: 26px;
+}
+.features-number {
+  margin-bottom: 26px;
+}
+.features-row {
+  padding-right: 6%;
+  padding-left: 6%;
+}
+
+
+
 .features-item {
   float: left;
   width: 33%;
+  min-height: 256px;
+
+  text-align: center;
 }
+.features-item * , .features-banner-item * {
+  display: block;
+}
+.features-row .features-item {
+  margin-top: 60px;
+  margin-bottom: 22px;
+  width: 31%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.features-name,
+.features-number,
+.simple-text {
+  margin-left: auto;
+  margin-right: auto;
+}
+.features-name, .simple-text {
+}
+.features-row-gray .features-name {
+
+}
+.simple-text {
+  /*
+  width: 165px;
+  */
+}
+
+.hotel-icon::before {
+  content: url(../img/icon-hotel.png);
+}
+.burger-icon::before {
+  content: url(../img/icon-burger.png);
+}
+.present-icon::before {
+  content: url(../img/icon-present.png);
+  margin-bottom: 30px;
+}
+
+
+
+.features-row-gray {
+  background-color: #eeeeee;
+}
+
+
+.features-image-wrapper {
+  overflow: hidden;
+  float: left;
+  height: 256px;
+  width: 67%;
+}
+
+
+
+/*
+
+.hotel-icon::before,
+.burger-icon::before,
+.present-icon::before {
+  display: block;
+  margin: 0 auto;
+
+}
+
+*/
