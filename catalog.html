@@ -41,7 +41,7 @@
                     <label for="wi-fi">WI-FI</label>
                   </div>
                 </fieldset>
-                <fieldset>
+                                <fieldset>
                   <legend>Тип жилья:</legend>
                   <div class="input-item">
                     <input class="hotels-type-checkbox" type="checkbox" name="hotels" id="hotels" checked>
@@ -58,51 +58,61 @@
                 </fieldset>
               </div>
               <div class="hotels-type-right clearfix">
-                <div class="range-filter">
-                  <div class="range-controls">
-                    <div class="scale"><div class="bar"></div></div>
-                    <div class="toggle min-toggle"></div>
-                    <div class="toggle max-toggle"></div>
+                <fieldset>
+                  <legend>Стоимость в сутки (Р):</legend>
+                  <div class="range-filter">
+                    <div class="range-controls">
+                      <div class="scale"><div class="bar"></div></div>
+                      <div class="toggle min-toggle"></div>
+                      <div class="toggle max-toggle"></div>
+                    </div>
+                    <div class="price-controls">
+                       от <input class="min-price" type="text" value="0">
+                       до <input class="max-price" type="text" value="3000">
+                    </div>
                   </div>
-                  <div class="price-controls">
-                     от <input class="min-price" type="text" value="0">
-                     до <input class="max-price" type="text" value="3000">
-                  </div>
-                </div>
+                </fieldset>
                 <button class="btn-show" type="submit">Показать</button>
               </div>
-                     </form>
+            </form>
           </div>
         </section>
         <div class="inner-container">
-          <div class="hotel-wrapper-left">
-            <div class="search-result-title">
-              Найдено: 3
+          <div class="row-sorting clearfix">
+            <div class="hotel-wrapper-left">
+              <div class="search-result-title">
+                Найдено: 3
+              </div>
+              <div class="search-result-sorting">Сортировка:</div>
+              <span class="sorting-type">По цене</span>
+              <a href="#" class="sorting-type">По Типу</a>
+              <a href="#" class="sorting-type">По Рейтингу</a>
             </div>
-            <div class="search-result-sorting">Сортировка:</div>
-            <span class="sorting-type">По цене</span>
-            <a href="#" class="sorting-type">По Типу</a>
-            <a href="#" class="sorting-type">По Рейтингу</a>
-          </div>
-          <div class="hotel-wrapper-right">
-            <a class="arrow-up" href="#"></a>
-            <a class="arrow-down" href="#"></a>
+            <div class="hotel-wrapper-right">
+              <a class="arrow-up" href="#">▲</a>
+              <a class="arrow-down" href="#">▼</a>
+            </div>
           </div>
           <section class="hotels-list">
-            <article class="hotel-item">
+            <article class="hotel-item clearfix">
               <div class="hotel-wrapper-left">
                 <img src="img/hotel-amara.jpg" alt="hotel-amara" height="90" width="135">
-                <h2 class="hotel-name">Amara Resort & SPA</h2>
-                <p class="hotel-description">Гостиница    ОТ 3500 Р.</p>
-                <a class="btn-more" href="#">Подробнее</a>
-                <a class="btn-book" href="#">Забронировать</a>
+                <div class="hotel-col-info">
+                  <h2 class="hotel-name">Amara Resort & SPA</h2>
+                  <p class="hotel-description">
+                    <span>Гостиница</span>
+                    <span > ОТ 3500 Р.</span>
+                  </p>
+                  <a class="btn-more" href="#">Подробнее</a>
+                  <a class="btn-book" href="#">Забронировать</a>
+                </div>
               </div>
-              <div class="hotel-wrapper-right">
-                <div class="rating-stars"></div>
+              <div class="hotel-wrapper-right clearfix">
+                <div class="rating-stars">★★★★</div>
                 <div class="rating">Рейтинг: 8.5</div>
               </div>
             </article>
-            <article class="hotel-item">
+            <article class="hotel-item clearfix">
               <div class="hotel-wrapper-left">
                 <img src="img/hotel-quail.jpg" alt="hotel-quail" height="90" width="135">
                 <h2 class="hotel-name">DESERT QUAIL INN</h2>
@@ -115,7 +125,7 @@
                 <div class="rating">Рейтинг: 8.9</div>
               </div>
             </article>
-            <article class="hotel-item">
+            <article class="hotel-item clearfix">
               <div class="hotel-wrapper-left">
                 <img src="img/hotel-villas.jpg" alt="hotel-villas" height="90" width="135">
                 <h2 class="hotel-name">VILLAS AT POCO DIABLO</h2>
@@ -123,7 +133,7 @@
                 <a class="btn-more" href="#">Подробнее</a>
                 <a class="btn-book" href="#">Забронировать</a>
               </div>
-              <div class="hotel-wrapper-right">
+              <div class="hotel-wrapper-right clearfix">
                 <div class="rating-stars"></div>
                 <div class="rating">Рейтинг: 9.2</div>
               </div>
@@ -132,17 +142,19 @@
         </div>
       </main>
       <footer class="main-footer">
-        <div class="hashtag">
-          #VISITSEDONA
+        <div class="footer-content-wrapper clearfix">
+          <div class="hashtag">
+            #VISITSEDONA
+          </div>
+          <section class="footer-social">
+            <a class="social-btn social-btn-tw" href="#">Twitter</a>
+            <a class="social-btn social-btn-fb" href="#">Facebook</a>
+            <a class="social-btn social-btn-yt" href="#">Youtube</a>
+          </section>
+          <section class="footer-copyright">
+            Website By <a href="#"><img src="img/logo-academy.png" alt="academy-logo" height="39" width="113"></a>
+          </section>
         </div>
-        <section class="footer-social">
-          <a class="social-btn social-btn-tw" href="#">Twitter</a>
-          <a class="social-btn social-btn-fb" href="#">Facebook</a>
-          <a class="social-btn social-btn-yt" href="#">Youtube</a>
-        </section>
-        <section class="footer-copyright">
-          Website By <a href="#"><img src="img/logo-academy.png" alt="academy-logo" height="39" width="113"></a>
-        </section>
       </footer>
     </div>
   </body>
