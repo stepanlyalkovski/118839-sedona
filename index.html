@@ -93,15 +93,25 @@
         <div class="hotel-search">
           <div class="form-item">
             <form class="hotel-searh-form" action="#" method = "post">
-              <label for="arrival-date">Дата заезда</label>
-              <input type = "text" name="arrival" id="arrival-date">
-              <label for="departure-date">Дата выезда</label>
-              <input type = "text" name="departure" id="departure-date">
-              <label for="adults-number">Взрослые</label>
-              <input type="number" name="adults" id="adults-number">
-              <label for="children-number">Дети</label>
-              <input type="number" name="children" id="children-number">
-              <button type="submit">Найти</button>
+              <div class="form-item-row">
+                <label for="arrival-date">Дата заезда</label>
+                <input class="arrival-value"type = "text" name="arrival" id="arrival-date" value="24 апреля 2016">
+              </div>
+             <div class="form-item-row">
+                <label for="departure-date">Дата выезда</label>
+               <input class="departure-value" type = "departure-value" name="departure" id="departure-date" value="4 июля 2016">
+             </div>
+             <div class="form-item-row">
+                <label for="adults-number">Взрослые</label>
+               <span class="minus">-</span>
+               <input class="number-value" type="text" name="adults" id="adults-number" value="2" readonly>
+               <span class="plus">+</span>
+               <label for="children-number">Дети</label>
+               <span class="minus">-</span>
+               <input class="number-value" type="text" name="children" id="children-number" value="0" readonly>
+               <span class="plus">+</span>
+             </div>
+              <button class="form-item-button" type="submit">Найти</button>
             </form>
           </div>
         </div>

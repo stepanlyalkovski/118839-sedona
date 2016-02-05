@@ -41,7 +41,7 @@
                     <label for="wi-fi">WI-FI</label>
                   </div>
                 </fieldset>
-                                <fieldset>
+                 <fieldset>
                   <legend>Тип жилья:</legend>
                   <div class="input-item">
                     <input class="hotels-type-checkbox" type="checkbox" name="hotels" id="hotels" checked>
@@ -84,7 +84,7 @@
                 Найдено: 3
               </div>
               <div class="search-result-sorting">Сортировка:</div>
-              <span class="sorting-type">По цене</span>
+              <a href="#" class="sorting-type active-sorting">По цене</a>
               <a href="#" class="sorting-type">По Типу</a>
               <a href="#" class="sorting-type">По Рейтингу</a>
             </div>
@@ -99,10 +99,10 @@
                 <img src="img/hotel-amara.jpg" alt="hotel-amara" height="90" width="135">
                 <div class="hotel-col-info">
                   <h2 class="hotel-name">Amara Resort & SPA</h2>
-                  <p class="hotel-description">
+                  <div class="hotel-description">
                     <span>Гостиница</span>
                     <span > ОТ 3500 Р.</span>
-                  </p>
+                  </div>
                   <a class="btn-more" href="#">Подробнее</a>
                   <a class="btn-book" href="#">Забронировать</a>
                 </div>
@@ -115,10 +115,13 @@
             <article class="hotel-item clearfix">
               <div class="hotel-wrapper-left">
                 <img src="img/hotel-quail.jpg" alt="hotel-quail" height="90" width="135">
-                <h2 class="hotel-name">DESERT QUAIL INN</h2>
-                <p class="hotel-description">Мотель   ОТ 2000 Р.</p>
-                <a class="btn-more" href="#">Подробнее</a>
-                <a class="btn-book" href="#">Забронировать</a>
+                <div class="hotel-col-info">
+                  <h2 class="hotel-name">DESERT QUAIL INN</h2>
+                  <div class="hotel-description">
+                   <span> Мотель</span>   <span>ОТ 2000 Р.</span></div>
+                  <a class="btn-more" href="#">Подробнее</a>
+                  <a class="btn-book" href="#">Забронировать</a>
+                </div>
               </div>
               <div class="hotel-wrapper-right">
                 <div class="rating-stars"></div>
@@ -128,10 +131,12 @@
             <article class="hotel-item clearfix">
               <div class="hotel-wrapper-left">
                 <img src="img/hotel-villas.jpg" alt="hotel-villas" height="90" width="135">
-                <h2 class="hotel-name">VILLAS AT POCO DIABLO</h2>
-                <p class="hotel-description">Апартаменты    ОТ 4000 Р.</p>
-                <a class="btn-more" href="#">Подробнее</a>
-                <a class="btn-book" href="#">Забронировать</a>
+                <div class="hotel-col-info">
+                  <h2 class="hotel-name">VILLAS AT POCO DIABLO</h2>
+                  <div class="hotel-description"><span>Апартаменты </span>   <span>ОТ 4000 Р.</span></div>
+                  <a class="btn-more" href="#">Подробнее</a>
+                  <a class="btn-book" href="#">Забронировать</a>
+                </div>
               </div>
               <div class="hotel-wrapper-right clearfix">
                 <div class="rating-stars"></div>
