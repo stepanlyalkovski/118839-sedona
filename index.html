@@ -36,7 +36,7 @@
             <div class="features-banner-item">
               <b class="features-name">Настоящий<br> городок</b>
               <div class="features-number">— №1 — </div>
-              <p class="features-text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+              <p class="features-text">Седона — не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="features-image-wrapper">
               <img class="features-image" src="img/banner-hotel.jpg" alt="banner-hotel" height="401" width="800">
@@ -91,38 +91,36 @@
           </p>
           <h2><a class="btn-hotel-search" href="#">Поиск гостиницы в Седоне</a></h2>
         </div>
-        <div class="hotel-search">
-          <div class="form-item">
-            <form class="hotel-searh-form" action="#" method = "post">
-              <div class="form-item-row">
-                <label for="arrival-date">Дата заезда:</label>
-                <input class="arrival-value"type = "text" name="arrival" id="arrival-date" value="24 апреля 2016">
-              </div>
-             <div class="form-item-row">
-                <label for="departure-date">Дата выезда:</label>
-               <input class="departure-value" type = "departure-value" name="departure" id="departure-date" value="4 июля 2016">
+        <div class="form-item">
+          <form class="hotel-searh-form" action="#" method = "post">
+            <div class="form-item-row icon icon-calendar">
+              <label for="arrival-date">Дата заезда:</label>
+              <input class="arrival-value" type = "text" name="arrival" id="arrival-date" value="24 апреля 2016">
+            </div>
+           <div class="form-item-row  icon icon-calendar">
+              <label for="departure-date">Дата выезда:</label>
+             <input class="departure-value" type = "text" name="departure" id="departure-date" value="4 июля 2016">
+           </div>
+           <div class="form-item-row">
+              <label for="adults-number">Взрослые:</label>
+             <div class="form-item-rangeblock">
+               <span class="minus">-</span>
+               <input class="number-value" type="text" name="adults" id="adults-number" value="2" readonly>
+               <span class="plus">+</span>
              </div>
-             <div class="form-item-row">
-                <label for="adults-number">Взрослые:</label>
-               <div class="form-item-rangeblock">
-                 <span class="minus">-</span>
-                 <input class="number-value" type="text" name="adults" id="adults-number" value="2" readonly>
-                 <span class="plus">+</span>
-               </div>
-               <label for="children-number">Дети:</label>
-               <div class="form-item-rangeblock">
-                 <span class="minus">-</span>
-                 <input class="number-value" type="text" name="children" id="children-number" value="0" readonly>
-                 <span class="plus">+</span>
-                              </div>
-               </div>
-              <button class="form-item-button" type="submit"><span>Найти</span></button>
-            </form>
-          </div>
+             <label for="children-number">Дети:</label>
+             <div class="form-item-rangeblock">
+               <span class="minus">-</span>
+               <input class="number-value" type="text" name="children" id="children-number" value="0" readonly>
+               <span class="plus">+</span>
+                            </div>
+             </div>
+            <button class="form-item-button" type="submit"><span>Найти</span></button>
+          </form>
         </div>
       </main>
-      <footer class="main-footer">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d666226.0572191516!2d-111.82361361001526!3d34.73352150311485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1453750199853" width="600" height="593" frameborder="0" style="border:0" allowfullscreen>
+      <footer class="index-main-footer">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d666226.0572191516!2d-111.82361361001526!3d34.73352150311485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1453750199853" width="600" height="593" style="border:0" allowfullscreen>
         </iframe>
         <div class="footer-content-wrapper clearfix">
           <div class="hashtag">
@@ -134,7 +132,7 @@
             <a class="social-btn social-btn-yt" href="#">Youtube</a>
           </section>
           <section class="footer-copyright">
-            Website By <a href="#"><img src="img/logo-academy.png" alt="academy-logo" height="39" width="113"></a>
+            <span>Website By</span> <a class="btn-academy-logo"href="#"></a>
           </section>
         </div>
       </footer>
