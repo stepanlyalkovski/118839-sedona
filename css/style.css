@@ -232,24 +232,9 @@ p {
   background-position: -5px -114px;
 }
 .icon-academy::before {
-    width: 113px;
-    height: 39px;
-    background-position: -90px -114px;
-}
-.icon-calendar::before {
-    width: 21px;
-    height: 22px;
-    background-position: -5px -5px;
-    left: 434px;
-    top: 9px;
-    cursor: pointer;
-    opacity: 0.2
-}
-.icon-calendar:hover::before {
-  opacity: 1;
-}
-.icon-calendar:active::before {
-  background-position: -36px -5px;
+  width: 113px;
+  height: 39px;
+  background-position: -90px -114px;
 }
 .social-btn {
   display: inline-block;
@@ -394,7 +379,7 @@ p {
   vertical-align: middle;
   box-shadow: 0px 7px 15px 0px rgba(0, 1, 1, 0.15);
 }
-.form-item-row span,
+
 .form-item-row input,
 .form-item-row label,
 .hashtag {
@@ -406,7 +391,7 @@ p {
 .form-item-row,
 .form-item-button
  {
-  width: 465px;
+  width: 475px;
   margin: 0 auto;
 }
 .form-item-button {
@@ -436,18 +421,37 @@ p {
 }
 .form-item-row {
   position: relative; /* for icons */
-  margin-bottom: 30px;
+  box-sizing: border-box;
+  margin-bottom: 29px;
 }
-
 .form-item-row:first-child {
   padding-left: 11px;
 }
 .form-item-row:nth-child(2) {
-  padding-left: 4px;
+  padding-left: 8px;
 }
 .form-item-row:last-of-type {
   margin-bottom: 53px;
   padding-left: 7px;
+}
+
+.icon-calendar {
+  position: absolute;
+  top: 8px;
+  right: 18px;
+  width: 21px;
+  height: 22px;
+  background-image: url(..//img/spritesheet.png);
+  background-repeat: no-repeat;
+  background-position: -5px -5px;
+  cursor: pointer;
+  opacity: 0.2
+}
+.icon-calendar:hover {
+  opacity: 1;
+}
+.icon-calendar:active {
+  background-position: -36px -5px;
 }
 .arrival-value,
 .departure-value
@@ -473,12 +477,31 @@ p {
 }
 .plus,
 .minus {
-  position: relative;
   display: inline-block;
   box-sizing: border-box;
   padding-top: 6px;
+  color: rgba(0,0,0,0.3);
   cursor: pointer;
 }
+.minus {
+  font-size: 42px;
+  line-height: 21px;
+  font-weight: 400;
+}
+.plus {
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.minus:hover,
+.plus:hover {
+  color: black;
+}
+.minus:active,
+.plus:active {
+  color: #81b3d2;
+}
+
 .arrival-value,
 .departure-value {
   width: 300px; /* 346 */
@@ -489,7 +512,8 @@ p {
   background-color: #f2f2f2;
 }
 .departure-value {
-  padding-left: 15px;
+  width: 304px;
+  padding-left: 11px;
   padding-top: 6px;
 }
 .arrival-value:hover,
@@ -507,33 +531,8 @@ p {
   vertical-align: top;
 }
 
-.plus::after,
-.plus::before,
-.minus::after {
-  position: absolute;
-  content: "";
-  width: 11px;
-  height: 3px;
-  bottom: 17px;
-  left: 14px;
-  background-color: #a9a9a9;
-}
 
-.plus:before {
-  left: 13px;
-  bottom: 16px;
-  transform: rotate(90deg);
-}
-.minus:hover::after,
-.plus:hover::before,
-.plus:hover::after {
-  background-color: black;
-}
-.minus:active::after,
-.plus:active::before,
-.plus:active::after {
-  background-color: #81b3d2;
-}
+
 .form-item-rangeblock:first-of-type {
   margin-left: 41px;
   margin-right: 53px;
@@ -555,7 +554,7 @@ p {
   width: 100%;
 }
 .footer-copyright {
-  padding-top: 41px;
+  padding-top: 40px;
 }
 .hashtag,
 .footer-social,
