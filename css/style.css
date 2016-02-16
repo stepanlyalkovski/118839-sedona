@@ -704,7 +704,10 @@ p {
   cursor: pointer;
   font-family: "PT Sans","Arial", "Geneva", "Helvetica", sans-serif;
 }
-
+.btn-transparent:hover {
+  background-color: white;
+  color: black;
+}
 
 
 .hotels-type {
@@ -780,7 +783,7 @@ fieldset .input-item:first-of-type {
 
 .row-sorting {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   text-align: center;
 }
 .row-sorting .hotel-wrapper-right {
@@ -791,11 +794,13 @@ fieldset .input-item:first-of-type {
   font-weight: bold;
 }
 .sorting-type {
+  margin-right: 30px;
+  padding: 0 1px;
+  border-bottom: 1px dotted #81b3d2;
+  line-height: 14px;
   font-size: 12px;
-  opacity: 0.4;
-  color: black;
+  color: #cacaca;
   text-decoration: none;
-  border-bottom: 1px dashed #81b3d2;
 }
 .active-sorting {
  color: #81b3d2;
@@ -807,10 +812,7 @@ fieldset .input-item:first-of-type {
   margin-right: 47px;
 }
 .search-result-sorting {
-  margin-right: 39px;
-}
-.sorting-type {
-  margin-right: 32px;
+  margin-right: 38px;
 }
 .sorting-type:hover:not(.active-sorting) {
   color: #81b3d2;
@@ -849,7 +851,7 @@ fieldset .input-item:first-of-type {
 .hotel-col-info,
 .sorting-type {
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: baseline;
 
 }
 .arrow-up,
