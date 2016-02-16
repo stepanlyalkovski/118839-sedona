@@ -118,7 +118,7 @@ p {
   padding-top: 76px;
   background: url(../img/bg-main.jpg) no-repeat;
   background-size: cover;
-  background-position: 0 26%;
+  background-position: 0 28%;
   min-height: 432px;
 }
 .title-image::after {
@@ -154,13 +154,13 @@ p {
   margin-bottom: 30px;
 }
 .simple-text {
-  margin-bottom: 52px;
+  margin-bottom: 53px;
   color: #333333;
 }
 .features-banner-item {
   box-sizing: border-box;
   float: left;
-  width: 33%;
+  width: 33.4%;
   min-height: 202px;
   padding-top: 54px;
   min-height: 256px;
@@ -168,20 +168,26 @@ p {
   background-color: #81b3d2;
 }
 .features-banner-item .features-text {
-  padding-left: 12%;
-  padding-right: 10%;
+  width: 75%;
+  margin: 0 auto;
+}
+.features-banner-item:nth-of-type(2) .features-text {
+  width: 53%;
 }
 .features-item {
   float: left;
   width: 31%;
+  min-height: 208px;
   padding-left: 1%;
   padding-right: 1%;
 }
 .features-name {
   margin-bottom: 24px;
-  padding-left: 4%;
   display: block;
   font-size: 21px;
+}
+.features-banner .features-name {
+
 }
 .features-number {
   margin-bottom: 21px;
@@ -194,7 +200,7 @@ p {
   overflow: hidden;
   float: left;
   height: 256px;
-  width: 67%;
+  width: 66.6%;
 }
 
 .icon::before,
@@ -216,13 +222,13 @@ p {
 .icon-burger::before {
     width: 74px;
     height: 70px;
-    transform: translate(-40%);
+    transform: translate(-40%, 1%);
     background-position: -103px -34px;
 }
 .icon-present::before {
     width: 64px;
     height: 76px;
-    transform: translate(-33%,-4%);
+    transform: translate(-34%,-5%);
     background-position: -187px -5px;
 }
 .icon-hotel::before {
@@ -305,33 +311,38 @@ p {
   padding-top: 47px;
 }
 .row-2 .features-name {
-  padding-left: 30%;
-  padding-right: 29%;
+  width: 43%;
+  margin: 0 auto;
+  margin-bottom: 23px;
 }
-.row-2 .features-name:nth-child(n+1) {
-  padding-left: 34%;
-}
-.row-2 .features-number:nth-child(n+1) {
-  padding-left: 4%;
+.row-2 .features-item:nth-child(n+2) {
+  padding-left: 1.5%;
 }
 .row-2 .simple-text {
   margin-bottom: 59px;
 }
-
 .row-1 .features-item {
   position: relative; /* for sprites */
-  width: 31%;
   min-height: 170px;
-  padding-left: 1%;
-  padding-right: 1%;
   padding-top: 101px;;
   margin-top: 60px;
 }
-.features-item .simple-text {
-  margin-right: 15%;
-  margin-left: 15%;
+.row-1 .features-item:nth-of-type(2) {
+  padding-left: 2%;
+  width: 30%
+}
+.row-1 .features-item:nth-of-type(3){
+  padding-left: 2.4%;
+  width: 30%
 }
 
+.features-item .simple-text {
+  width: 71%;
+  margin: 0 auto;
+}
+.icon-burger .simple-text {
+  width: 80%;
+}
 .index-content {
   padding-top: 56px;
 }
