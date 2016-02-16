@@ -65,8 +65,8 @@ p {
   text-align: left;
 }
 .main-nav-item:not(:first-child) {
-  width: 19%;
-  padding-left: 1%;
+  width: 19.1%;
+  padding-left: 0.7%;
 }
 .main-nav-item a,
 .main-nav-item span,
@@ -598,7 +598,7 @@ p {
 
 .filter-range {
   padding-top: 10px;
-
+  margin-left: 3%;
 }
 .filter-range-title {
   margin-bottom: 9px;
@@ -717,7 +717,7 @@ p {
 }
 .hotels-type-right {
   float: right;
-  width: 33%;
+  width: 31%;
 }
 .hotels-type-left fieldset{
   display: inline-block;
@@ -729,11 +729,47 @@ p {
   min-width: 240px;
 }
 .input-item {
+  position: relative;
   display: block;
-  height: 50px;
+  height: 25px;
+  margin-right: 50%;
+  margin-top: 21px;
+  padding-left: 41px;
+  cursor: pointer;
+}
+fieldset .input-item:first-of-type {
+  margin-top: 26px;
 }
 .input-item input {
   margin-top: 25px;
+}
+
+.input-item input[type="checkbox"] {
+  display: none;
+}
+.input-item input[type="checkbox"] + .checkbox-indicator{
+  position: absolute;
+  opacity: 0.9;
+  top: -3px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: 2px solid white;
+  border-radius: 25%
+}
+.input-item input[type="checkbox"]:checked + .checkbox-indicator {
+  width: 26px;
+  height: 22px;
+  border: 0;
+  opacity: 1;
+
+  border-radius: 0;
+  background-position: -67px -5px;
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+}
+.input-item input[type="checkbox"]:disabled + .checkbox-indicator {
+  opacity: 0.4;
 }
 .row-sorting,
 .hotel-item {
