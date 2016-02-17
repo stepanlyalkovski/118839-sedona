@@ -611,7 +611,8 @@ p {
 
 .arrival-value,
 .departure-value {
-  width: 300px; /* 346 */
+  width: 300px;
+  height: 26px; /* for IE */
   padding: 7px 30px 6px 14px;
   border: 0;
   margin-left: 20px;
@@ -766,6 +767,7 @@ p {
 
 .price-controls input {
   width: 57%;
+  height: 31px; /* for IE */
   margin: 0;
 
   color: inherit;
