@@ -437,20 +437,35 @@ p {
 /* Search Form */
 
 .form-item {
-  /*display: none; */
+  display: none;
+  overflow: hidden; /* for animation */
   position: absolute;
   right: 50%;
   left: 50%;
   width: 568px;
   margin: 0 auto;
   padding-top: 55px;
-
   transform: translate(-50%);
   background-color: white;
   font-size: 0px;
   line-height: 26px;
   vertical-align: middle;
   box-shadow: 0px 7px 15px 0px rgba(0, 1, 1, 0.15);
+}
+
+.form-item-show {
+  display: block;
+  animation: pull-out 1s;
+}
+
+@keyframes pull-out {
+  from {
+    height: 0;
+  }
+  to {
+    height: 339px;
+  }
+
 }
 
 .form-item-row input,
@@ -1108,3 +1123,6 @@ fieldset .input-item:first-of-type {
 
 .btn-hotel-search:active,
 .btn-book:active { background-color: #503e33; }
+
+
+
