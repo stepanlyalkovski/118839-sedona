@@ -138,6 +138,7 @@ p {
   position: relative;
   padding-top: 76px;
   background: url(../img/bg-main.jpg) no-repeat;
+  background-color: #dceaf3;
   background-size: cover;
   background-position: 0 28%;
   min-height: 432px;
@@ -155,6 +156,7 @@ p {
 
 .hotels-type {
   background: url(../img/bg-filter.jpg) no-repeat;
+  background-color: #698eb3;
   background-size: cover;
   background-position: 0 16%;
 }
@@ -162,6 +164,7 @@ p {
 .title-image img{
   display: block;
   margin: 0 auto;
+  padding-bottom: 80px;
 }
 
 .main-header,
