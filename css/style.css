@@ -224,11 +224,16 @@ p {
 }
 
 .features-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
   width: 100%;
   height: auto;
 }
 
 .features-image-wrapper {
+  position: relative;
   overflow: hidden;
   float: left;
   height: 256px;
@@ -638,6 +643,7 @@ p {
 
 .form-item-rangeblock {
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .form-item-rangeblock > span {
@@ -1059,6 +1065,7 @@ fieldset .input-item:first-of-type {
 .rating-star {
   display: inline-block;
   margin-right: 1px;
+  vertical-align: baseline;
   color: #81b3d2;
   font-size: 23px;
 }
